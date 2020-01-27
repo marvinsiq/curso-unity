@@ -14,4 +14,13 @@ public class ControlaBala : MonoBehaviour
             + transform.forward * velocidade * Time.deltaTime
             ); ;
     }
+
+    void OnTriggerEnter(Collider objetoDeColisao)
+    {
+        if (objetoDeColisao.tag == "Inimigo")
+        {
+            Destroy(objetoDeColisao.gameObject);
+            Destroy(gameObject);
+        }
+    }
 }
