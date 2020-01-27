@@ -7,12 +7,6 @@ public class ControlaJogador : MonoBehaviour
     public float velocidade = 10;
     private Vector3 direcao;
 
-    public static class Axis
-    {
-        public const string Horizontal = "Horizontal";
-        public const string Vertical = "Vertical";
-    }
-
     public static class Parameters
     {
         public const string Movendo = "Movendo";
